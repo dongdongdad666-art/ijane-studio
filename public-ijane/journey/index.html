@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+ <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#e6eceb">
+ <title>创作街区 · IJane</title><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <main id="app">
+  <canvas id="scene" tabindex="0" aria-label="第一人称创作街区。滚动或上下拖动沿街行走，左右拖动环顾，也可使用下方街区章节按钮。"></canvas>
+  <section id="story" aria-live="polite">
+   <span id="story-count">沿着好奇，慢慢向前</span><h1 id="story-title">走进我的创作街区</h1>
+   <p id="story-subtitle">从工作实践出发，走进八段创作现场。</p><p id="story-body" hidden></p>
+   <button id="read-note" class="paper-button" hidden>翻开这段经历</button>
+  </section>
+  <div id="marker-layer" aria-hidden="true"></div>
+  <aside id="object-note" role="dialog" aria-labelledby="note-title" hidden>
+   <button id="close-note" class="close" aria-label="收起经历纸条"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5L19 19M19 5L5 19"/></svg></button>
+   <span id="note-en"></span><h2 id="note-title"></h2><div id="note-body"></div><small id="note-tags"></small>
+   <a id="note-link" class="paper-button project-link" target="_blank" rel="noopener noreferrer" hidden>在线体验这个项目</a>
+  </aside>
+  <footer>
+   <div class="journey-instruction"><span id="instruction">滚动前行 · 横拖环顾</span><button id="replay" class="paper-button">重新出发</button></div>
+   <nav aria-label="街区章节">
+    <button class="paper-button" data-destination="0" aria-current="step">街口</button>
+    <button class="paper-button" data-station="0">电商橱窗</button>
+    <button class="paper-button" data-station="1">材料小屋</button>
+    <button class="paper-button" data-station="2">文创造物铺</button>
+    <button class="paper-button" data-station="3">IJane 工作室</button>
+    <button class="paper-button" data-station="4">顺路面包</button>
+    <button class="paper-button" data-station="5">气味花园</button>
+    <button class="paper-button" data-station="6">相原温室</button>
+    <button class="paper-button" data-station="7">星图观测街</button>
+    <button class="paper-button" data-destination="1">街尾</button>
+   </nav>
+   <div class="journey-track" aria-hidden="true"><i id="progress-line"></i></div>
+  </footer>
+  <div id="loading" role="status">正在走进创作街区…</div>
+  <div id="error" hidden><h2>三维场景暂时未能打开</h2><p>请尝试刷新页面，或使用支持 WebGL 的浏览器。</p><button class="paper-button" onclick="location.reload()">重新打开</button></div>
+ </main>
+ <script type="module" src="./main.mjs"></script>
+</body>
+</html>

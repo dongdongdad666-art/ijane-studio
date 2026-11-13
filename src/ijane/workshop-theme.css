@@ -1,0 +1,213 @@
+/* IJane workshop: cream paper, mist blue and a restrained vermilion accent.
+   Loaded after the original styles; artwork images and scene pixels stay intact. */
+:root {
+  --workshop-cream: #f3ede2;
+  --workshop-blue: #b9cedb;
+  --workshop-ink: #344653;
+  --workshop-orange: #d76b4a;
+  --paper: var(--workshop-cream);
+  --ink: var(--workshop-ink);
+  --muted: #566571;
+  --line: #b8bdb9;
+  --blue: #3e6076;
+  --blue-paper: #dce5e8;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+body,
+.itom-adaptation,
+.itom-adaptation .itom-error {
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.itom-adaptation ::selection {
+  color: var(--ink);
+  background: var(--workshop-blue);
+}
+
+.itom-adaptation .ijane-identity strong { color: var(--ink); }
+.itom-adaptation .ijane-identity span { color: var(--muted); }
+
+.itom-adaptation .ijane-index,
+.itom-adaptation .ijane-room-shortcuts button {
+  color: var(--ink);
+  background: rgb(243 237 226 / 96%);
+  border-color: #8999a1;
+}
+
+.itom-adaptation .ijane-index {
+  box-shadow: 2px 2px 0 rgb(52 70 83 / 12%);
+  border-radius: 2px 3px 2px 5px / 3px 2px 5px 2px;
+}
+
+.itom-adaptation .ijane-entry p {
+  color: var(--ink);
+  text-shadow: 0 1px 5px var(--paper), 0 0 14px var(--paper);
+}
+
+.itom-adaptation .ijane-entry button {
+  color: var(--ink);
+  background: var(--workshop-blue);
+  border-color: var(--ink);
+  border-radius: 2px 5px 3px 2px / 4px 2px 5px 2px;
+  box-shadow: 3px 3px 0 var(--workshop-orange);
+}
+
+.itom-adaptation .ijane-entry button:hover,
+.itom-adaptation .ijane-index:hover,
+.itom-adaptation .ijane-room-shortcuts button:hover:not(:disabled),
+.itom-adaptation .ijane-room-shortcuts button[aria-current='page'] {
+  color: var(--ink);
+  background: var(--workshop-blue);
+  border-color: var(--ink);
+}
+
+.itom-adaptation .ijane-room-shortcuts button[aria-current='page'] {
+  box-shadow: inset 0 -2px 0 var(--workshop-orange);
+}
+
+.itom-adaptation .ijane-room-caption {
+  color: var(--ink);
+  max-width: min(450px, 43vw);
+  padding: 12px 16px;
+  background: rgb(243 237 226 / 90%);
+  border-left: 2px solid var(--workshop-orange);
+  text-shadow: none;
+}
+
+.itom-adaptation .ijane-room-caption p { color: var(--muted); }
+.itom-adaptation.is-inspecting .ijane-room-caption { display: none; }
+.itom-adaptation .ijane-room-caption button {
+  color: var(--ink);
+  background: transparent;
+  border-color: var(--ink);
+}
+
+/* Retain the original torn-paper silhouette and texture at full contrast. */
+.itom-adaptation .nav-btn { box-shadow: 0 3px 10px rgb(52 70 83 / 12%); }
+.itom-adaptation .nav-btn::before {
+  background-image: linear-gradient(rgb(185 206 219 / 86%), rgb(185 206 219 / 86%)), url('/textures/paper-texture.webp');
+}
+.itom-adaptation .nav-btn::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 55' preserveAspectRatio='none'%3E%3Cpath d='M0 0 L50 0 L49 5.5 L50 11 L48.5 19 L50 27.5 L49 36 L50 44 L48.5 49.5 L50 55 L45 54 L40 55 L35 53 L30 55 L25 54 L20 55 L15 53 L10 55 L5 54 L0 55 L1 49.5 L0 44 L1.5 36 L0 27.5 L1 19 L0 11 L1.5 5.5 L0 0 Z' fill='none' stroke='%23344653' stroke-width='1.5'/%3E%3C/svg%3E");
+}
+.itom-adaptation .nav-btn:hover::before {
+  background-image: linear-gradient(rgb(243 237 226 / 86%), rgb(243 237 226 / 86%)), url('/textures/paper-texture.webp');
+}
+.itom-adaptation .nav-btn svg,
+.itom-adaptation .map-panel .close-btn svg,
+.itom-adaptation .audio-panel .close-btn svg,
+.itom-adaptation .map-border-overlay path { stroke: var(--ink); }
+.itom-adaptation .hamburger-btn .hamburger-icon span { background: var(--ink); }
+
+.itom-adaptation .map-panel .map-content-clipped,
+.itom-adaptation .audio-panel .audio-card {
+  background-color: var(--paper);
+  background-image: linear-gradient(rgb(243 237 226 / 90%), rgb(243 237 226 / 90%)), url('/textures/paper-texture.webp');
+  background-size: cover;
+}
+.itom-adaptation .map-panel .map-header,
+.itom-adaptation .audio-panel .audio-header { border-color: #91a9b8; }
+.itom-adaptation .map-panel .map-header h3,
+.itom-adaptation .audio-panel .audio-header h3,
+.itom-adaptation .audio-panel .audio-sliders-container .slider-group .slider-label { color: var(--ink); }
+.itom-adaptation .map-panel .map-content-clipped::before {
+  background-image: linear-gradient(rgb(243 237 226 / 90%), rgb(243 237 226 / 90%)), url('/textures/paper-texture.webp');
+}
+.itom-adaptation .map-panel .map-content-clipped { overflow: hidden; }
+.itom-adaptation .map-panel .map-container { background: transparent; }
+.itom-adaptation .map-panel .map-room-label {
+  color: var(--ink);
+  text-shadow: -1px -1px 0 var(--paper), 1px -1px 0 var(--paper), -1px 1px 0 var(--paper), 1px 1px 0 var(--paper);
+}
+.itom-adaptation .map-panel .pin-slot.active {
+  outline: 2px solid var(--workshop-orange);
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+.itom-adaptation .audio-panel .audio-card::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0 0 L100 0 L98 10 L100 20 L97 35 L100 50 L98 65 L100 80 L97 90 L100 100 L90 97 L80 100 L70 96 L60 100 L50 97 L40 100 L30 96 L20 100 L10 97 L0 100 L2 90 L0 80 L3 65 L0 50 L2 35 L0 20 L3 10 L0 0 Z' fill='none' stroke='%23344653' stroke-width='0.5'/%3E%3C/svg%3E");
+}
+.itom-adaptation .audio-panel .audio-sliders-container .slider-group .paper-slider { background: var(--workshop-blue); }
+.itom-adaptation .audio-panel .audio-sliders-container .slider-group .paper-slider::-webkit-slider-thumb { background: var(--ink); }
+.itom-adaptation .audio-panel .audio-sliders-container .slider-group .paper-slider::-moz-range-thumb { background: var(--ink); }
+
+.itom-adaptation .preloader__half {
+  background-color: var(--paper);
+  background-image: linear-gradient(rgb(243 237 226 / 86%), rgb(243 237 226 / 86%)), url('/textures/paper-texture.webp');
+}
+.itom-adaptation .preloader__percentage { color: var(--ink); }
+.itom-adaptation .preloader__overlay path { stroke: var(--ink); }
+.itom-adaptation .preloader__ring circle { stroke: var(--blue); }
+.itom-adaptation .preloader__ring circle:first-child { stroke: var(--workshop-orange); }
+
+/* Reading layers use the same palette, without tinting project photography. */
+.itom-adaptation .itom-content {
+  border-color: #8195a1;
+  box-shadow: 0 0 0 100vmax rgb(52 70 83 / 46%);
+  scrollbar-color: #8195a1 var(--paper);
+}
+.itom-adaptation .itom-content-bar { background: var(--workshop-blue); border-color: #8195a1; }
+.itom-adaptation .itom-content-bar button { color: var(--ink); }
+.itom-adaptation .itom-content-bar button:hover { text-decoration: underline; text-underline-offset: 4px; }
+/* The image-heavy index needs a light cool paper, rather than a large cream field. */
+.itom-adaptation .itom-content:has(.works-page) {
+  --paper: #f5f8f9;
+  --line: #d5e0e5;
+  --muted: #526771;
+  background: var(--paper);
+  border-color: #a9bdc8;
+}
+.itom-adaptation .itom-content:has(.works-page) .itom-content-bar {
+  background: #dfeaf0;
+  border-color: #c0d2dc;
+}
+.itom-adaptation .works-page .project-cover {
+  background: #eaf0f3;
+  border-color: #d5e0e5;
+}
+.itom-adaptation .works-page .project-index,
+.itom-adaptation .works-page .view-case { background: #f5f8f9; color: var(--ink); }
+.itom-adaptation .itom-content .works-page .filter-bar button[aria-pressed='true'] {
+  background: #e0ebf1;
+  border-color: #9ab3c1;
+}
+.itom-adaptation .itom-content .filter-bar button[aria-pressed='true'] { background: var(--workshop-blue); }
+.itom-adaptation .itom-content .case-sections p,
+.itom-adaptation .itom-content .contact-bottom p { color: var(--muted); }
+.itom-adaptation .itom-content .name-sheet { background: #e9e3d8; }
+.itom-adaptation .itom-content .contact-sheet { background: var(--blue-paper); border-color: #9eafb8; }
+.itom-adaptation .itom-content .contact-sheet::before { background: rgb(215 107 74 / 38%); }
+.itom-adaptation .itom-content .contact-bottom { border-color: #9eafb8; }
+.itom-adaptation .itom-error button { border-color: var(--ink); background: var(--workshop-blue); }
+
+.itom-adaptation button:focus-visible,
+.itom-adaptation a:focus-visible,
+.itom-adaptation input:focus-visible,
+.itom-adaptation summary:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 4px;
+}
+.itom-adaptation .map-panel .map-hover-zone:focus-visible { outline-offset: -3px; }
+
+@media (max-width: 767px) {
+  .itom-adaptation .ijane-entry { bottom: calc(35px + env(safe-area-inset-bottom)); }
+  .itom-adaptation .ijane-index { min-height: 44px; }
+  .itom-adaptation .ijane-room-caption {
+    max-width: none;
+    bottom: calc(124px + env(safe-area-inset-bottom));
+    padding: 10px 12px;
+  }
+  .itom-adaptation .ijane-room-caption p { font-size: 12px; line-height: 1.65; }
+  .itom-adaptation .ijane-room-caption button { min-height: 44px; margin-top: 3px; }
+  .itom-adaptation .ijane-room-shortcuts { bottom: calc(16px + env(safe-area-inset-bottom)); }
+  .itom-adaptation .ijane-room-shortcuts button { min-height: 44px; }
+  .itom-adaptation .map-panel { max-height: 100dvh; overflow-y: auto; overscroll-behavior: contain; }
+  .itom-adaptation .map-panel .map-header .close-btn,
+  .itom-adaptation .audio-panel .audio-header .close-btn { min-width: 44px; min-height: 44px; }
+  .itom-adaptation .map-panel .map-room-label { font-size: 14px; letter-spacing: 0; }
+  .itom-adaptation .itom-content-bar { gap: 12px; }
+  .itom-adaptation .itom-content-bar > span { flex-shrink: 0; }
+}

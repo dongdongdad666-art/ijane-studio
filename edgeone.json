@@ -1,0 +1,15 @@
+{
+  "buildCommand": "npm run build:edgeone",
+  "installCommand": "npm ci --no-audit --no-fund",
+  "outputDirectory": "dist",
+  "nodeVersion": "22.21.1",
+  "rewrites": [
+    { "source": "/*", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/*",
+      "headers": [{ "key": "X-Content-Type-Options", "value": "nosniff" }]
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+/* Match ITom's paper navigation: textured fill and a single irregular ink edge. */
+.itom-adaptation {
+  --paper-control-fill: rgb(235 242 245 / 91%);
+  --paper-control-edge: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60' preserveAspectRatio='none'%3E%3Cpath d='M2 3L39 2L72 3L113 2L150 3L198 2L197 13L198 23L196.5 35L198 46L197 58L180 57L164 58L148 56.5L128 58L109 57L90 58L68 56.5L48 58L27 57L2 58L3 47L2 36L3.5 24L2 13Z' fill='none' stroke='%23344653' stroke-width='1.2' vector-effect='non-scaling-stroke' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.itom-adaptation :is(.paper-control, .itom-content .text-link, .itom-content .button, .itom-content .back-link, .filter-bar button, .view-case) {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--ink);
+  font-family: 'Cabin Sketch', 'Microsoft YaHei', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.itom-adaptation :is(.paper-control, .itom-content .text-link, .itom-content .button, .itom-content .back-link, .filter-bar button, .view-case)::before,
+.itom-adaptation :is(.paper-control, .itom-content .text-link, .itom-content .button, .itom-content .back-link, .filter-bar button, .view-case)::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.itom-adaptation :is(.paper-control, .itom-content .text-link, .itom-content .button, .itom-content .back-link, .filter-bar button, .view-case)::before {
+  background: linear-gradient(var(--paper-control-fill), var(--paper-control-fill)), url('/textures/paper-texture.webp') center / cover;
+  clip-path: polygon(1% 5%,20% 3%,36% 5%,57% 3%,75% 5%,99% 3%,98.5% 22%,99% 38%,98.25% 58%,99% 77%,98.5% 97%,90% 95%,82% 97%,74% 94%,64% 97%,54% 95%,45% 97%,34% 94%,24% 97%,13.5% 95%,1% 97%,1.5% 78%,1% 60%,1.75% 40%,1% 22%);
+  transition: background-color 160ms ease;
+}
+
+.itom-adaptation :is(.paper-control, .itom-content .text-link, .itom-content .button, .itom-content .back-link, .filter-bar button, .view-case)::after {
+  background: var(--paper-control-edge) center / 100% 100% no-repeat;
+}
+
+.itom-adaptation :is(.paper-control, .itom-content .text-link, .itom-content .button, .itom-content .back-link, .filter-bar button):hover:not(:disabled),
+.itom-adaptation .paper-control[aria-current='page'],
+.itom-adaptation .itom-content .filter-bar button[aria-pressed='true'],
+.itom-adaptation .itom-content .works-page .filter-bar button[aria-pressed='true'] {
+  --paper-control-fill: rgb(185 206 219 / 88%);
+  background: transparent;
+  color: var(--ink);
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.itom-adaptation :is(.paper-control, .itom-content .text-link, .itom-content .button, .itom-content .back-link, .filter-bar button):active:not(:disabled)::before {
+  --paper-control-fill: rgb(164 191 207 / 92%);
+}
+.itom-adaptation .paper-control:disabled { opacity: .45; cursor: wait; }
+.itom-adaptation .paper-icon { width: 20px; height: 20px; flex: 0 0 20px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; vertical-align: middle; }
+
+.itom-adaptation .ijane-index { position: fixed; min-width: 128px; }
+.itom-adaptation .ijane-entry .paper-control { --paper-control-fill: rgb(185 206 219 / 90%); padding: 13px 30px; font-size: 16px; }
+.itom-adaptation .ijane-room-shortcuts { gap: 7px; }
+.itom-adaptation .ijane-room-shortcuts .paper-control { font-size: 12px; padding: 10px 13px; }
+.itom-adaptation .ijane-room-shortcuts .paper-control[aria-current='page'] { box-shadow: none; font-weight: 600; }
+.itom-adaptation .ijane-room-caption {
+  border: 0;
+  padding: 18px 20px;
+  background: linear-gradient(rgb(243 240 232 / 93%), rgb(243 240 232 / 93%)), url('/textures/paper-texture.webp') center / cover;
+  clip-path: polygon(0 1%,25% 0,56% 1%,80% 0,100% 1%,99.7% 32%,100% 68%,99.5% 100%,74% 99%,49% 100%,25% 99%,0 100%,.4% 66%,0 33%);
+}
+.itom-adaptation .ijane-room-caption .paper-control { margin: 12px 0 0; padding: 10px 14px; font-size: 13px; }
+.itom-adaptation .ijane-room-caption h1 { font-size: 19px; font-weight: 500; }
+.itom-adaptation .ijane-room-caption:has(button) { padding-bottom: 22px; }
+/* Keep focus clear of the paper edge rather than clipping its outline. */
+.itom-adaptation .ijane-room-caption .paper-control:focus-visible { outline-offset: 2px; }
+
+.itom-adaptation .itom-content,
+.itom-adaptation .itom-content:has(.works-page) {
+  --paper: #f5f8f9;
+  background: linear-gradient(rgb(245 248 249 / 95%), rgb(245 248 249 / 95%)), url('/textures/paper-texture.webp') center / 750px;
+  border: 0;
+}
+.itom-adaptation .itom-content-bar,
+.itom-adaptation .itom-content:has(.works-page) .itom-content-bar {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: linear-gradient(rgb(223 234 240 / 91%), rgb(223 234 240 / 91%)), url('/textures/paper-texture.webp') center / 750px;
+  border: 0;
+}
+.itom-adaptation .itom-content-bar > span { font-family: 'Cabin Sketch', 'Microsoft YaHei', sans-serif; font-size: 14px; }
+.itom-adaptation .itom-content-bar .paper-control { font-size: 13px; }
+.itom-adaptation .itom-content-bar button:hover { text-decoration: none; }
+.itom-adaptation .itom-content .filter-bar { border: 0; gap: 10px; padding-bottom: 12px; }
+.itom-adaptation .itom-content .filter-bar button { min-width: 100px; }
+.itom-adaptation .itom-content .filter-bar button span { font-size: 13px; margin-left: 3px; }
+.itom-adaptation .itom-content .filter-bar button[aria-pressed='true'] { font-weight: 600; }
+.itom-adaptation .itom-content .view-case { position: absolute; font-size: 12px; }
+.itom-adaptation .itom-content .project-index { border: 0; font-family: 'Cabin Sketch', sans-serif; font-size: 16px; }
+.itom-adaptation .itom-content .all-works-link { border: 0; background: var(--blue-paper); padding: 22px 24px; }
+.itom-adaptation .itom-content .case-end > a { display: inline-flex; align-items: center; gap: 10px; }
+
+@media (max-width: 767px) {
+  .itom-adaptation .ijane-index { min-width: 116px; font-size: 12px; }
+  .itom-adaptation .ijane-room-shortcuts { gap: 4px; }
+  .itom-adaptation .ijane-room-shortcuts .paper-control { padding: 9px; font-size: 11px; }
+  .itom-adaptation .ijane-room-caption { padding: 12px 15px; }
+  .itom-adaptation .ijane-room-caption .paper-control { margin-top: 9px; }
+  .itom-adaptation .itom-content-bar { gap: 10px; padding: 10px 4%; }
+  .itom-adaptation .itom-content-bar > span { font-size: 11px; }
+  .itom-adaptation .itom-content-bar .paper-control { padding: 9px 12px; font-size: 12px; }
+  .itom-adaptation .itom-content .filter-bar { gap: 6px; }
+  .itom-adaptation .itom-content .filter-bar button { min-width: 0; padding: 10px 12px; font-size: 12px; }
+  .itom-adaptation .itom-content .filter-result { flex-basis: 100%; text-align: right; padding-top: 4px; }
+  .itom-adaptation .itom-content .case-end { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+}
