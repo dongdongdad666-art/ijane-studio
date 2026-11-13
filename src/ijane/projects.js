@@ -14,7 +14,7 @@ export const projects = [
     aiRole: 'AI 辅助概念图、模型制作与导入、材质实验、动画及网页实现；我持续选择方向、评审结果并提出修改。',
     tags: ['概念品牌', '材质语言', '三维交互'],
     cover: media('phase-origin', '相原光叶：蓝紫半透明叶片与暖金色中轴的概念产品视觉', 'project-034 / assets/product-system/v001/leaf-hero-v001.png；既有概念视觉，非实体产品摄影'),
-    url: 'https://phase-origin-034.vercel.app/',
+    url: 'https://phase.szydym.com/',
     sections: [
       { title: '起点：对连续空间的好奇', body: '我从对沉浸式三维网页的兴趣出发，以 Hatom 为视觉与交互参考，探索科幻主题下的连续空间叙事。方向从“记忆生态”调整到“行星器官”，逐步确定以主体演变、镜头绕行和环境变化组织体验。' },
       { title: '把视觉判断变成系统', body: '蓝紫半透材料与暖色能量光成为贯穿作品的线索。通过概念图筛选、模型导入、材质实验与动画评审，我持续检查形态、光线和镜头之间的关系，再把这些判断带入后续网页迭代。光叶与枝网的概念图用于表达材料和组合方向，不是实体制造记录。', media: media('phase-origin-array', '相原枝网应用概念图：多片光叶排列在暗色展厅中', 'project-034 / assets/product-system/v001/leaf-array-v001.png；既有应用概念视觉') },
