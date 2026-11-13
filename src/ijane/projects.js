@@ -34,7 +34,7 @@ export const projects = [
     aiRole: 'AI 协助研究整理、图像生成、代码与制作执行；现成字体与技术库提供基础支持。香气卡为本地组合演示，不调用在线模型。',
     tags: ['品牌体验', '内容系统', '互动原型'],
     cover: media('shunlu', '顺路面包纸袋视觉：路绿字标、转角图形与自然光场景', 'project-027 / src/m4-remotion-sample/public/film/bag-day.png；虚构品牌，AI场景非实拍'),
-    url: 'https://shunlu-case-study.vercel.app/',
+    url: 'https://shunlu.szydym.com/',
     sections: [
       { title: '创意：今天这一炉', body: '我希望通过一个社区面包品牌，探索视觉设计如何延伸到内容、互动和空间体验。在与 AI 的协作中，“今天这一炉”的香气卡成为核心创意：用一个轻巧的选择，把日常心情与面包的香气联系起来。' },
       { title: '建立能反复使用的视觉线索', body: '我选择以路径与转角构成识别系统，让路绿、纸米与炉橙贯穿字标、纸袋、界面与工坊，再用自然光下的食物质感承接品牌温度。香气卡复用固定产品母图和版式，使不同组合仍然属于同一个品牌。', media: media('shunlu-card', 'A01香气卡实际资产：慢一点，麦香会等你，原味长条餐包', 'project-027 / src/m3-prototype/public/assets/A01.webp；AI视觉图与品牌版式') },
