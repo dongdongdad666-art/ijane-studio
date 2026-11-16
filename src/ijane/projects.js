@@ -93,7 +93,7 @@ export const projects = [
     aiRole: '机器读取示例采用固定种子，语义残差由规则映射呈现，用于让观众理解机器判断与人的补述之间的关系。',
     tags: ['AI交互', '档案叙事', '不确定性'],
     cover: media('machine-misread', '机器误读档案馆公开网站的实际页面', 'https://machine-misread-archive.vercel.app/；2026-11-03浏览器实录'),
-    url: 'https://machine-misread-archive.vercel.app/',
+    url: 'https://machine-misread-archive-dpvp5hdazwto.edgeone.dev/',
     sections: [
       { title: '物证与记忆之间', body: '旧字典等档案不是被一次识别就结束的对象。页面将机器不确定项、人的补述和残差分别呈现，用纸白、红色印章与残差几何延续档案语言，让识别过程本身成为叙事。' },
       { title: '可以体验什么', body: '可浏览档案、按主题筛选，并从馆内示例进入机器读取与人类补述流程。来源、权限和生成结果被分开记录；固定示例用于说明机制，档案数量不代表真实用户规模。' },
