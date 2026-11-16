@@ -107,7 +107,7 @@ export const projects = [
     aiRole: '生成图像用于情境预演，并展示候选淘汰与身份漂移。原型使用虚构资料，不代表真实 OCR 或实时政策核验。',
     tags: ['服务原型', '生成内容审核', '身份一致性'],
     cover: media('petway', 'PETWAY机场预演生成场景：运输包旁的猫', 'project-026 / assets/petway.webp；来源PETWAY原站生成媒体，非实拍'),
-    url: 'https://petway-portfolio.vercel.app/',
+    url: 'https://petway.szydym.com/',
     sections: [
       { title: '把约束放在生成之前', body: '从运输包尺寸、宠物资料到时间线，原型先建立任务条件，再进入机场与酒店场景预演。内置虚构宠物“米粒”降低了体验门槛，也让不同场景中的身份一致性可以被比较。' },
       { title: '失败结果也需要有去处', body: '治理台展示候选、淘汰和身份漂移异常，出发卡保留未解决事项。这个项目关注生成结果如何被判断和接入；所有预检与旅行情境均为演示，不构成真实出行政策或服务承诺。' },
