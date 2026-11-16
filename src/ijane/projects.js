@@ -149,7 +149,7 @@ export const projects = [
     aiRole: 'AI 参与创作协作，森林视觉、气味文案与互动共同组成概念品牌的数字体验。',
     tags: ['感官叙事', '品牌视觉', '滚动体验'],
     cover: media('scent-atlas', 'SCENT ATLAS原站森林视觉：苔藓、树木与薄雾', 'project-026 / assets/scent-forest.webp；来源原站/assets/forest.webp'),
-    url: 'https://scent-atlas-sage.vercel.app/',
+    url: 'https://scent.szydym.com/',
     sections: [
       { title: '从气味词到空间感', body: '森林与水滴建立入口，苔藓中调和雪松后调沿滚动逐步展开。拨雾互动让观众改变可见程度，香水瓶的揭晓则把抽象氛围重新连接到具体的商品形象。' },
       { title: '概念的边界', body: '档案中的香调与时间构成不同气味故事，页面保留未发售说明。这是个人品牌概念与数字叙事作品，档案数量不代表已经生产或销售的商业产品。' },
