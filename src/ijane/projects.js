@@ -54,7 +54,7 @@ export const projects = [
     aiRole: 'AI 协助空间搭配示意与制作，原砖图和规格提供材料依据，共同连接商品信息与空间想象。',
     tags: ['家装材料', '商业视觉', '交互选材'],
     cover: media('belite', 'Belite实际首页：北非花园系列材料与空间搭配示意', 'project-025 / tests/20261012-线上优化-首页-v001.jpg；网页实录，内含AI空间示意'),
-    url: 'https://belite-material-studio.vercel.app/',
+    url: 'https://belite.szydym.com/',
     sections: [
       { title: '问题：从一块砖想象一片空间', body: '材料的颜色、釉面与尺寸可以被单独展示，但真正的选择还需要理解它们如何排列、如何与其他材料发生关系。这个网站把系列氛围、产品信息和二维铺贴工作台连起来，让视觉表达服务于商品理解。' },
       { title: '从浏览进入比较', body: '产品选材支持按系列与条件筛选，再将选中的材料带入试铺。工作台提供正铺、半错缝、美缝颜色与宽度等选项，并通过 A/B 方案比较呈现排列差异。这里展示的是二维铺贴样板，不是自动生成的真实房间渲染。', media: media('belite-laying', 'Belite二维铺贴工作台：材料架、正铺样板与美缝控制', 'project-025 / tests/20261012-线上优化-试铺-v001.jpg；实际界面截图') },
