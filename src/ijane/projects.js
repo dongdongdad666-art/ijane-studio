@@ -163,7 +163,7 @@ export const projects = [
     aiRole: 'AI 参与创作协作。无麦克风入口使用内置声纹与本地生成，让观众可以先从无声下潜开始。',
     tags: ['沉浸氛围', '声音实验', '交互入口'],
     cover: media('abyssal-genesis', '深海创世无麦克风体验实录：黑暗海水与上方青色微光', 'project-026 / assets/abyssal.jpg；2026-10-10原站无麦克风模式截图'),
-    url: 'https://abyssal-genesis.vercel.app/',
+    url: 'https://abyssal.szydym.com/',
     sections: [
       { title: '从权限选择进入氛围', body: '作品允许选择无麦克风体验，再进入“无声下潜”。青绿色透光、稀疏颗粒与简短字幕共同建立深海感，声音和字幕开关使观众能够调整入口体验。' },
       { title: '一段无声的开场', body: '首段以“光正在失去名字”引导下潜，微光和字幕保留了黑暗中的方向感。封面来自无麦克风模式的实际画面；观众可以调整声音和字幕，或返回起点重新选择入口。' },
