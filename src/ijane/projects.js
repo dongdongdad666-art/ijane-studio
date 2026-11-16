@@ -121,7 +121,7 @@ export const projects = [
     aiRole: '界面呈现原因假设、置信度与人工复核。当前站点以演示数据说明流程，数字不作为模型准确率或经营绩效。',
     tags: ['电商业务', '信息设计', '行动流程'],
     cover: media('returnlens', 'ReturnLens问题中心实际界面，显示SKU筛选、原因、复核状态和演示估算', 'project-026 / assets/returnlens.jpg；2026-10-10原站/issues实录'),
-    url: 'https://returnlens-two.vercel.app/',
+    url: 'https://returnlens.szydym.com/',
     sections: [
       { title: '从问题进入证据', body: '经营总览、问题中心和整改看板构成连续的信息结构。用户可以按 SKU 筛选问题，查看原因假设、置信度和复核状态，再将关注点放到待执行、执行中、待验证和已验证的行动阶段。' },
       { title: '当前演示边界', body: '当前版本用于演示信息结构与行动流程。覆盖率显示与部分证据状态仍存在不一致，部分复核操作暂不可用；页面金额、置信度与下降目标均为演示或规则数值，不是实际经营成绩。' },
