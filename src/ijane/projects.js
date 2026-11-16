@@ -135,7 +135,7 @@ export const projects = [
     aiRole: 'AI 辅助视觉与原型制作，将绘画氛围、场景资产和可操作的探索规则组织在一起。',
     tags: ['交互叙事', '绘画风格', '游戏原型'],
     cover: media('starry-night', '星夜来客试玩实录：旋涡星空、村落与笔触修复后的场景', 'project-028 / tests/20261016-探索边界/regression-v04/05-meeting.png；试玩实录'),
-    url: 'https://starry-night-visitors.vercel.app/',
+    url: 'https://starry.szydym.com/',
     sections: [
       { title: '把笔触变成动作', body: '夜色不仅是背景，也构成观察和行动的线索。画册提供章节入口，场景通过暖窗、颜色与猫的行为引导玩家停下、靠近和修复，让画面的语言进入交互规则。' },
       { title: '走进夜色', body: '移动、观察台阶、靠近暖窗，再为猫留出一点空间，微小动作构成夜色中的相遇。作品以游戏原型和叙事实验呈现，封面保留实际试玩画面，在线入口可以继续探索场景。' },
