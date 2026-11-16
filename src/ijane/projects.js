@@ -177,7 +177,7 @@ export const projects = [
     aiRole: 'AI 辅助代码实现、视觉迭代和测试。城市几何、材质和驾驶音效由程序生成，实时渲染使用 Three.js。',
     tags: ['WebGL 实时渲染', '程序化城市', '街机驾驶', 'CG 运镜'],
     cover: media('neon-run', '夜航实机画面：湿润路面、霓虹街道与驾驶仪表', 'project-039 / 正式展示页 assets/drive-night.jpg'),
-    url: 'https://neon-run-shuizhuyu.vercel.app/',
+    url: 'https://neon-run.szydym.com/',
     sections: [
       { title: '让赛道本身有节奏', body: '路线由玻璃海、空中环线、赤街、地下连廊、零号港和海岸终局组成。驾驶、漂移和氮气冲刺决定玩家如何穿过这些路段。天气按赛程连续变化，雨势、湿路倒影与天光共同提示行进距离。', media: media('neon-run-day', '雨后晴朗的零号港实机画面', 'project-039 / 正式展示页 assets/drive-day.jpg') },
       { title: '用另一套镜头呈现同一座城', body: '独立制作的六十秒 CG 用绕车、进出座舱、螺旋高架和碰撞组织追逐。官网把观看和试玩并列呈现，观众可选择直接驾驶，也可以在看完 CG 后进入游戏。', media: media('neon-run-spiral', 'CG 画面：霓虹螺旋高架与城市塔楼', 'project-039 / 正式展示页 assets/spiral.jpg') },
